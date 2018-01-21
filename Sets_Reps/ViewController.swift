@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var setCounter = 0;
+    var repCounter = 0;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +22,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func resetCounters(_ sender: Any) {
+        setCounter = 0;
+        repCounter = 0;
+    }
+    
 
 
 }

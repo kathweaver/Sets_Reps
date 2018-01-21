@@ -78,6 +78,9 @@
                                         <rect key="frame" x="135" y="150" width="50" height="310"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetCounters:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6TI-Su-eMk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
