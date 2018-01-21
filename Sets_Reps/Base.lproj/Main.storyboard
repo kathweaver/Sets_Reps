@@ -72,6 +72,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZM-fU-oWc">
                                                         <rect key="frame" x="0.0" y="78" width="82.5" height="30"/>
                                                         <state key="normal" title="Reps"/>
+                                                        <connections>
+                                                            <action selector="repButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ue0-bT-DMs"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -98,6 +101,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="lblRep" destination="ftX-1f-8tZ" id="0P8-8R-359"/>
                         <outlet property="lblSet" destination="uLi-0F-faf" id="krn-Pg-eP3"/>
                     </connections>
                 </viewController>

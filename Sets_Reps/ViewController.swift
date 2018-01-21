@@ -12,12 +12,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var lblSet: UILabel!
     
+    @IBOutlet weak var lblRep: UILabel!
+    
     var setCounter = 0;
     var repCounter = 0;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        resetCounters(<#T##sender: Any##Any#>);
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,15 +30,24 @@ class ViewController: UIViewController {
     
     @IBAction func resetCounters(_ sender: Any) {
         setCounter = 0;
-        repCounter = 0;
+        setLabels();
     }
     
+    @IBAction func repButton(_ sender: Any) {
+        repCounter += 1;
+          setLabels();
+    
+    }
     @IBAction func setButton(_ sender: Any) {
         setCounter += 1;
-        lblSet.text = String(setCounter);
-        
+        repCounter = 0;
+        setLabels();
     }
     
+    func setLabels() {
+        lblSet.text = String(setCounter);
+        lblRep.text = String(repCounter);
+    }
 
 }
 
