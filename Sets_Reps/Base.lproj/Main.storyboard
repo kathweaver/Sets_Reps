@@ -48,6 +48,9 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7y-UY-Yl9">
                                                         <rect key="frame" x="0.0" y="78" width="82.5" height="30"/>
                                                         <state key="normal" title="Sets"/>
+                                                        <connections>
+                                                            <action selector="setButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hhd-S7-sMA"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -94,6 +97,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="lblSet" destination="uLi-0F-faf" id="krn-Pg-eP3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

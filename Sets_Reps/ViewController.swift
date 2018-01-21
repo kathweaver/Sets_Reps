@@ -9,10 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+    @IBOutlet weak var lblSet: UILabel!
     
     var setCounter = 0;
     var repCounter = 0;
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,7 +30,12 @@ class ViewController: UIViewController {
         repCounter = 0;
     }
     
-
+    @IBAction func setButton(_ sender: Any) {
+        setCounter += 1;
+        lblSet.text = String(setCounter);
+        
+    }
+    
 
 }
 
