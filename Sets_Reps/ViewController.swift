@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
     @IBAction func resetCounters(_ sender: Any) {
         setCounter = 0;
+        repCounter = 0;
         setLabels();
     }
     
