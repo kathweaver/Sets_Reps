@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     
     @IBAction func repButton(_ sender: Any) {
         repCounter += 1;
-          setLabels();
+        setLabels();
     
     }
     @IBAction func setButton(_ sender: Any) {
